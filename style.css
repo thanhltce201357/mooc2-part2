@@ -58,18 +58,15 @@ nav ul {
   gap: 20px;
 }
 
-/* Commented out li styling */
-/* nav ul li {
-  display: inline;
-} */
-
 /* Navigation link effects */
 nav ul li a {
   position: relative;
-  padding: 8px 12px;
+  display: block;
+  padding: 10px 12px;
   color: #ffd700;
   text-decoration: none;
   font-weight: bold;
+  line-height: 2; /* tăng khoảng cách giữa các dòng */
   transition: color 0.3s;
 }
 
@@ -77,7 +74,7 @@ nav ul li a::after {
   content: "";
   position: absolute;
   left: 0;
-  bottom: -4px;
+  bottom: 0; /* gạch nằm dưới chữ */
   width: 0;
   height: 2px;
   background: #ffd700;
